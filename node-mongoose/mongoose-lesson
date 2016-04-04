@@ -1,0 +1,17 @@
+- It's not imposed any structure.
+- However if you want to add a strucuture -> Mongoose
+- Mongoose it's a node module -> Object Data Model;
+- Ass strcuture to Mongodb documents though schema
+- Mongoose has the same feature mongodb
+- db.on and db.once
+- Shema: strucuture of the data to be stored
+- Defines all the fileds and types.
+- Example var dishSchema = new Schema({
+    name: {type: String, required:true, unique: true},
+    description:{type:String, required: true}},
+    {timestamps:true})
+})
+
+var Dishes = mongoose.model('Dishes',dishSchema);
+- Collection name is in Plural
+- Mongoose allows embeded document schema ( nest shema , let's say )
